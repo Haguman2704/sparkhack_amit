@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head><title>The future is here</title>
+        <link rel="stylesheet" href="E:\model\ML-model-deployment-part-2-main\static\style1.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='E:\model\ML-model-deployment-part-2-main\static\style1.css')}}">
+        <link rel="stylesheet" href="mystyles.cssWDC">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="images" href="{{url_for('static',filename='E:\model\ML-model-deployment-part-2-main\static\m1.jpeg')}}">
+        <link rel="images" href="{{url_for('static',filename='E:\model\ML-model-deployment-part-2-main\static\prof.jpg')}}">
+        <link rel="images" href="{{url_for('static',filename='pro.jpeg')}}">
+        <link rel="images" href="{{url_for('static',filename='set.jpg')}}">
+        <link rel="images" href="{{url_for('static',filename='style1.css')}}">
+        <link rel="images" href="{{url_for('static',filename='m2.jpeg')}}">
+    <script>
+        function toggledash(){
+                var x=document.getElementById("dash");
+                var y=document.getElementById("man");
+                var z=document.getElementById("pro");
+                if(x.style.display===""){
+                    x.style.width="250px";
+                    x.style.display="block";
+                    y.style.display="block";
+                    z.style.display="block";
+                }
+                else if(x.style.display==="block"){
+                    x.style.width="0px";
+                    x.style.display="";
+                    y.style.display="none";
+                    z.style.display="none";
+
+                }
+            }
+            function manprof_red(){
+                window.location.href="manprof.html";
+            }
+            function pro_red(){
+                window.location.href="pay.html"
+            }
+    </script>
+    <style>
+        .ham{
+            color: white;
+            height: 200%;
+            position:absolute;
+            z-index: 1;
+            top: 10%;
+            transition: 1s;
+            
+        }
+        .prosub{
+            position: absolute;
+            top:200px;
+            z-index: 2;
+
+        }
+        .manprof{
+            position: absolute;
+            top:100px;
+            z-index: 2;
+        }
+        .dashbutton{
+            position: absolute;
+            top:-60px;
+            left: 0px;
+        }
+        .hr{
+            color: white;
+            bottom: 50%;
+
+        }
+    </style>
+
+
+    </head>
+    <header>
+        <button type="menu" id="dash" class="ham" onclick="toggledash()"><img class="dashbutton" src="C:\Users\Amit\Downloads\m1.jpeg" height="50px" width="50px"></button>
+    </header>
+    <div class="dashboardx" id="dashb">dashtest
+        <button onclick="pro_red()" class="prosub" id="pro"><img src="C:\Users\Amit\Downloads\pro.jpeg" height="40px" width="40px"></button>
+        <button onclick="manprof_red()" class="manprof" id="man"><img src="C:\Users\Amit\Downloads\prof.jpg" height="40px" width="40px"></button>
+    </div>
+    <br>
+    <br>
+    <hr class="hr" color="white">
+    <body bgcolor="black">
+        <div>
+            <div class="head">CALCULATE POWER SUPPLY</div>
+            <div class="bigbox"></div>
+            <p class="area">INPUT BY AREA</p>
+            <p class="preva"><input style="height:30px;font-size:12pt;width:900px;" type="text" placeholder="PREVIOUS AREA"></p>
+            <p class="newa"><input type="text" style="height:30px;font-size:12pt;width:900px;" placeholder="NEW AREA"></p>
+            <button class="ab">CALCULATE GRAPH</button>
+            </font>
+        </div>
+        <br>
+        <Br>
+        <Br>
+        <BR>
+        <BR>
+            <div>
+                <font color="white" size="30px">
+                <p class="number">INPUT BY UNIT NUMBERS</p>
+                <p class="prevnum"><input style="height:30px;font-size:12pt;width:900px;background-color: #f6f6f6;" type="text" placeholder="PREVIOUS NUMBER"></p>
+                <p class="newnum"><input type="text" style="height:30px;font-size:12pt;width:900px;" placeholder="NEW NUMBER"></p>
+                <button class="abn" style="background-color: black;color: #f6f6f6;border-color: black;">CALCULATE GRAPH</button>
+                </font>
+            </div>    
+        
+
+    </body>
+    <br>
+        <Br>
+        <Br>
+        <BR>
+        <BR>
+        <BR>
+            <BR>
+                <BR>
+                    <br>
+                    <BR>
+                        <br>
+                    
+
+    <footer class="footer">
+        <div>
+        <a href="f1.html"><img src="C:\Users\Amit\Downloads\list.jpg" height="100px"></a>
+        <a href="home2.html" class="home"><img src="C:\Users\Amit\Downloads\home.jpg" height="100px" ></a>
+        <a href="settings.html"><img src="C:\Users\Amit\Downloads\set.jpg" height="100px" align="right"></a>
+        </div>
+        
+    </footer>
+</html>

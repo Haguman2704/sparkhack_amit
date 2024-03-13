@@ -1,0 +1,551 @@
+!<DOCTYPE html>
+    <html>
+        <head><title>The future is here</title>
+            <link rel="stylesheet" href="mystylesaaazazqzqz.css">
+            <link rel="stylesheet" src="register.js">
+            <style>
+                .share-tech mono-regular {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+.dashboard{
+    height: 120%;
+        width: 250px;
+        position:absolute;
+        z-index: 1;
+        top: 34;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 60px;
+        display: "none";
+}
+
+.img1{
+    position: absolute;
+    top:150px;
+    left:580px;
+    height:250px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.tc{
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.a1{
+    height: 250px;
+    width: 1230px;
+    position: relative;
+    background-color: rgb(65, 19, 108);
+    margin-left: 50px;
+    margin-top: 150px;
+    margin-left: 100px;
+    border-radius: 30px;
+}
+
+.a1-text{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 50px;
+    left:100px;
+    font-size: 35px;
+}
+
+.a2-text{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(232, 55, 238);
+    border-radius: 30px;
+}
+
+    .a2-text:hover {
+        animation: button 0.5s ease-in-out infinite alternate;
+    }
+    
+    .a2-text:active {
+        opacity: 1;
+    }
+    
+    @keyframes button {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.3);
+        }
+    }
+
+.p1{
+    position: absolute;
+    top: 530px;
+    left:100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.p2{
+    position: absolute;
+    top:630px;
+    left:100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: 70px;
+}
+
+.why{
+    position: absolute;
+    top:580px;
+    right:100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: right;
+}
+
+.because{
+    position: absolute;
+    top:650px;
+    right:100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: right;
+    width:500px;
+}
+
+.home{
+    align-items: center;
+    position: absolute;
+    left:650px;
+}
+
+.register{
+    color: white;
+    font-size: 40px;
+    font-family: "Share Tech Mono", monospace;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    background-color:rgb(232, 55, 238);
+}
+
+.form{
+    background-color: rgb(65, 19, 108);
+    display: inline-block;
+    height: 300px;
+    width: 506px;
+    position: absolute;
+    top: 530px;
+    left: 500px;
+}
+
+.i1, .i2, .i3{
+    display: inline-block;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+}
+
+.i1{
+    top: 30px;
+    left: 50px;
+}
+
+.i2{
+    top: 80px;
+    left: 50px;
+}
+
+.i3{
+    top: 130px;
+    left: 50px;
+}
+
+.i4{
+    top: 180px;
+    left: 50px;
+}
+
+.cont{
+    display: inline-block;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.pg3text{
+    font-family: "Share Tech Mono", monospace;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    top:0;
+    left: 250px;
+    color: white;
+}
+
+.pg3subtext{
+    font-family: "Poppins", monospace;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    top:70px;
+    left: 150px;
+    width: 900px;
+    color: white;
+    font-weight: 100;
+}
+
+.pro{
+    font-family: "Poppins", monospace;
+    font-weight: 100;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    top:200px;
+    left: 150px;
+    width: 900px;
+    color: white;
+
+}
+
+.head{
+    font-family: "Share Tech Mono", monospace;
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+    width: 350px;
+    position: absolute;
+    top:120px;
+    left: 570px;
+    text-align: center;
+}
+
+.bigbox{
+    background-color:  rgb(65, 19, 108);
+    height: 600px;
+    width: 1000px;
+    position: absolute;
+    left: 230px;
+    top: 250px;
+    border-radius: 30px;
+}
+
+.area{
+    background-color: rgb(232, 55, 238);
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 280px;
+    left: 280px;
+    font-weight: 200;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.preva{
+    border-radius: 10px;
+    position: absolute;
+    top:330px;
+    left: 280px;
+    font-size: 30px;
+}
+
+.newa{
+    border-radius: 10px;
+    position: absolute;
+    top:400px;
+    left: 280px;
+    font-size: 30px;
+}
+
+.ab{
+    border-radius: 10px;
+    position: absolute;
+    top:500px;
+    left:660px;
+    font-size: 15px;
+}
+
+.ab:hover {
+    animation: button 0.5s ease-in-out infinite alternate;
+}
+
+.ab:active {
+    opacity: 1;
+}
+
+@keyframes button {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.number{
+    background-color: rgb(232, 55, 238);
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 550px;
+    left: 280px;
+    font-weight: 200;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.prevnum{
+    border-radius: 10px;
+    position: absolute;
+    top:600px;
+    left: 280px;
+    font-size: 30px;
+}
+
+.newnum{
+    border-radius: 10px;
+    position: absolute;
+    top:670px;
+    left: 280px;
+    font-size: 30px;
+}
+
+.abn{
+    border-radius: 10px;
+    position: absolute;
+    top:780px;
+    left:660px;
+    font-size: 15px;
+}
+
+.abn:hover {
+    animation: button 0.5s ease-in-out infinite alternate;
+}
+
+.abn:active {
+    opacity: 1;
+}
+
+@keyframes button {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.footer{
+    position:absolute;
+    top:900px;
+    width: 1430px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+</style>
+        </head>
+        <body bgcolor="black">
+            <header>
+                    <button type="menu" id="dashb" class="dashboard"><img onclick="toggledash()" src="C:\Users\Amit\Downloads\m1.jpeg" height="100px"></button>
+                    <a href="n2.html"><img src="C:\Users\Amit\Downloads\prof2.jpeg" height="70px" align="right"></a>
+            </header>
+            <hr class ="header" color="white">
+            <img src="C:\Users\Amit\Downloads\prof2.jpeg"  alt="lightup"  class="img1"></img>
+            <p class="register">REGISTER WITH US NOW!</p>
+            <form class="form" id="registrationForm" action="#">
+                <p>
+                    <select id="stateDropdown" class="i1" onchange="populateRegistrationIdAndPlants()">
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Uttar">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Daman">Daman and Diu</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Pondicherry">Pondicherry</option>
+                    </select>
+                </p>
+                <p>
+                    <select id="pincodeDropdown" class="i2">
+                        <option value="">Select Type</option>
+                        <option value="AIS">AIS</option>
+                        <option value="GIS">GIS</option>
+                    </select>
+                <p>
+                    <select id="plantDropdown" class="i3">
+                        <option value="">Select Name of Plant</option>
+                    </select>
+                </p>
+                <button class="cont" id="continueButton" onclick="redirectToPage3()">CONTINUE</button>
+            </form>
+                
+            <script>
+                function toggledash(){
+                var x=document.getElementById("dashb");
+                if(x.style.display===""){
+                    x.style.width="250px";
+                    x.style.display="block";
+                }
+                else if(x.style.display==="block"){
+                    x.style.width="0px";
+                    x.style.display="";
+                }
+            }
+                function redirectToPage3() {
+                    var stateDropdown = document.getElementById("stateDropdown");
+                    var plantDropdown = document.getElementById("plantDropdown");
+                    if (stateDropdown.value === "" || plantDropdown.value === "") {
+                        alert("Please fill all required fields!");
+                        return; 
+                        }
+                        else{
+                        window.location.href = "pay.html";
+                        }
+                }
+                function populateRegistrationIdAndPlants() {
+                    var stateDropdown = document.getElementById("stateDropdown");
+                    var plantDropdown = document.getElementById("plantDropdown");
+                    var selectedState = stateDropdown.value;
+                    
+                            var plantsByState = {
+                                "Andhra Pradesh": ["CHILKALURIPETA", "GAZUWAKA", "GOOTY", "KADAPA", "KURNOOL", "NAGARJUNSAGAR", "NELLORE", "NELLORE PS", "NP KUNTA", "SRIKAKULAM", "VEMAGIRI", "VIJAYAWADA", "VIZAGHVDC" ],
+                                "Arunachal Pradesh": ["NAMSAI", "NIRJULI", "ROING", "TEZU", "ZIRO" ],
+                                "Assam": ["BADARPUR", "BALIPARA", "BISHWANATH CHARIALI", "BISHWANATH CHARIALI(HVDC)", "BONGAIGAON",	"AISHAFLONG",	"GISMARIANI",	"MISA", "SALAKATI", "SILCHAR" ],
+                                "Bihar": ["ARA", "BANKA", "BIHARSHIRFF", "CHANDAUTI", "GAYA", "KISHANGANJ", "LAKHISARAI", "MUZAFFARPUR", "NEW PURNEA", "PATNA", "PURNEA", "SAHARSA", "SASARAM", "SASARAMHVDC", "SITAMARHI"],
+                                "Chhattisgarh":["BHATAPARA", "BILASPUR", "CHAMPAHVDC", "CHAMPA PS", "DHARAMJAYGARH", "RAIGARH", "RAIGARH KOTRA PS", "RAIGARH TAMNAR PS", "RAIGARH HVDC", "RAIPUR", "RAIPUR DURG PS"],
+                                "Goa":["MAPUSA"],
+                                "Gujarat":["BANASKANTHA", "BHACHAU", "BHUJ", "BHUJ II", "DEHGAM", "KALA", "NAVSARI", "PIRANA", "RADHASENA", "VADODARA", "VAPI"],
+                                "Haryana":["ABDULLAPUR", "BAHADURGARH", "BALLABHGARH", "BHIWANI", "FATEHABAD", "GURGAON", "HISSAR", "KAITHAL", "JIND", "KURUKSHETRA", "KURUKSHETRA HVDC", "MANESAR", "PANCHKULA", "SONEPAT",],
+                                "Himachal":["CHAMBA", "HAMIRPUR", "NALLAGARH"],
+                                "Jharkhand":["CHAIBASA", "CHANDWA", "DALTONGANJ", "JAMSHEDPUR", "RANCHI", "RANCHI NEW"],
+                                "Karnataka":["BANGALORE", "BIDADI", "HASSAN", "HIRIYUR", "KOLAR AC", "KOLAR HVDC", "KUDGI", "MADHUGIRI TUMKUR", "MYSORE", "NARENDRA", "MYSORE", "NARENDRA", "PAVAGADA", "YELAHANKA"],
+                                "Kerala":["KOCHI", "KOZHIKODE", "PALLAKAD", "THIRUVANANTHAPURAM", "TRICHUR", "TRISSUR GIS", "TRISSUR HVDC"],
+                                "Madhya Pradesh":["BETUL", "BHIND", "BINA", "DAMOH", "GUNA", "GWALIOR", "INDORE", "ITARSI", "JABALPUR", "JABALPUR PS", "KHANDWA", "RAJGARH", "REWA", "SATNA", "VINDHYACHAL PS", "BOISOR", "MAGARWADA", "SEONI", "VINDHYACHAL HDVC"],
+                                "Maharashtra":["AURANGABAD", "BHADRAWATI", "CHANDRAPUR HVDC", "KOLHAPUR", "PADGHE", "PARLI", "PUNE TALEGAON", "PUNE NEW", "SOLHAPUR", "WARDHA"],
+                                "Manipur":["IMPHAL", "JIRIBAM"],
+                                "Meghalaya":["KHLERIHAT"],
+                                "Mizoram":["AIZWAL", "MELRIAT"],
+                                "Nagaland":["DIMAPUR", "MOKOKCHUNG"],
+                                "Odisha":["ANGUL", "BARIPADA", "BOLANGIR", "INDRAVATI", "JEYPORE", "JHARSUGUDA", "KEONJHAR", "PANDIABILI", "RENGALI", "ROURKELA", "TALCHER HDVC"],
+                                "Punjab":["AMRITSAR", "JALANDHAR", "LUDHIANA", "MALERKOTLA", "MOGA", "BANALA", "PATIALA"],
+                                "Rajasthan":["BHADLA","BIKANER", "AJMER", "BASSI", "BHADLA-II", "BHINMAL", "BHIWADI", "BHIWADI HVDC","CHITTORGARH", "FATEHGARH", "JAIPUR SOUTH", "KANKROLI", "KHETRI", "KOTA", "KOTPUTLI","NEEMARANA", "SIKAR"],
+                                "Sikkim":["GANGTOK", "NEW MELLI", "RANGPO"],
+                                "Tamil":["ARASUR", "DHARMAPURI PS", "HOSUR", "KALIBANDHAPATU", "KARAIKUDI", "MADRAS", "MADURAI", "NAGAPATTINAM", "PUGALUR", "PUGALUR GIS", "PUGALUR HDVC", "THIRUNELVELI", "TIRUVALEM", "TRICHY", "TUTICORIN PS", "UDUMALPET"],
+                                "Telangana":["HYDERABAD", "KHAMMAM", "MAHESHWARAM", "NIZAMABAD", "WARANGAL"],
+                                "Tripura":["KUMARGHAT"],
+                                "Uttarakhand":["DEHRADUN", "KOTESHWAR", "ROORKEE", "PITHORAGARH", "SITARGANJ"],
+                                "Uttar":["RAEBAREILLY", "SAMBHAL", "SHAHJAHANPUR", "SOHAWAL"],
+                                "West Bengal":["ALIPURDUAR", "BERHAMPUR", "BIRPARA", "DALKHOLA", "DURGAPUR", "JEERUT", "MAITHON", "MALDA", "MEDINIPUR", "NEW SILIGURI", "RAJARHAT", "SUBHASHGRAM"],
+                                "JK":["DRASS GIS", "KARGIL", "KISHENPUR", "SAMBHA", "WAGOORA"],
+                                "Ladakh":["KHALSTI", "LEH"],
+                                "Delhi":["DWARKA", "JHATIKARA", "MAHARANIBAGH", "TUGLAKABAD"],
+                                "Daman":["MAGARWADA"],
+                                "Pondicherry":["PUDUCHERRY"],
+                            };
+                    
+                            plantDropdown.innerHTML = '<option value="">Select Name of Plant</option>';
+                    
+                            // Populate plants based on the selected state
+                            if (selectedState && plantsByState[selectedState]) {
+                                plantsByState[selectedState].forEach(function(plant) {
+                                    var option = document.createElement("option");
+                                    option.text = plant;
+                                    option.value = plant;
+                                    plantDropdown.add(option);
+                                });
+                            }
+                        }
+                        document.getElementById("continueButton").addEventListener("click", function(event) {
+                            event.preventDefault();
+                            redirectToPage3();
+                        });
+            </script>
+        </body>
+        <br>
+        <br>
+        <BR>
+        <br>
+        <br>
+        <BR>
+            <br>
+            <br>
+            <BR>
+            <br>
+    
+        
+        <footer class="footer">
+            <div>
+            <a><img src="C:\Users\Amit\Downloads\list.jpg" height="100px" onclick="formerror()"></a>
+            <a class="home" href="home2.html"><img src="C:\Users\Amit\Downloads\home.jpg" height="100px" ></a>
+            <a><img src="C:\Users\Amit\Downloads\set.jpg" height="100px" align="right" onclick="formerror()"></a>
+            </div>
+            <script>
+                function formerror() {
+                        alert("An error occurred!");
+                }
+            </script> 
+           
+        </footer>
+        
+        </html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="images" href="{{url_for('static',filename='m2.jpeg')}}">
+        <script>
+            function toggledash(){
+                var x=document.getElementById("dashb");
+                if(x.style.display===""){
+                    x.style.width="250px";
+                    x.style.display="block";
+                }
+                else if(x.style.display==="block"){
+                    x.style.width="0px";
+                    x.style.display="";
+                }
+            }
+            function pro_red(){
+                var x=document.getElementById("pro");
+                window.location.href="pay_gate.html";
+
+            }
+            function manprof_red(){
+                window.location.href="prof_man.html";
+
+            }
+        </script>
+<style>
+    .prof_man{
+        position: absolute;
+        right: 0%;
+        top:0;
+    }
+    .prosub{
+        position: absolute;
+        left: 5px;
+    }
+    .manprof{
+        position: absolute;
+        top: 1px;
+        left: 5px;
+    }
+    .dashboard{
+        height: 120%;
+        width: 250px;
+        position:absolute;
+        z-index: 1;
+        top: 100;
+        left: 100;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 60px;
+        display: "none";
+        
+    }
+    #dashb{
+        display: "none";
+        width: 0;
+    }
+.share-tech mono-regular {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.img1{
+    position: absolute;
+    top:150px;
+    left:580px;
+    height:250px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.tc{
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.a1{
+    height: 250px;
+    width: 1230px;
+    position: relative;
+    background-color: rgb(65, 19, 108);
+    margin-left: 50px;
+    margin-top: 150px;
+    margin-left: 100px;
+    border-radius: 30px;
+}
+
+.a1-text{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 50px;
+    left:100px;
+    font-size: 35px;
+}
+
+.a2-text{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(232, 55, 238);
+    border-radius: 30px;
+}
+
+    .a2-text:hover {
+        animation: button 0.5s ease-in-out infinite alternate;
+    }
+    
+    .a2-text:active {
+        opacity: 1;
+    }
+    
+    @keyframes button {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.3);
+        }
+    }
+
+.p1{
+    position: absolute;
+    top: 530px;
+    left:100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.p2{
+    position: absolute;
+    top:630px;
+    left:100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: 70px;
+}
+
+.why{
+    position: absolute;
+    top:580px;
+    right:100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: right;
+}
+
+.because{
+    position: absolute;
+    top:650px;
+    right:100px;
+    padding: 50px;
+    display: inline;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: right;
+    width:500px;
+}
+
+.home{
+    align-items: center;
+    position: absolute;
+    left:650px;
+}
+
+.register{
+    color: white;
+    font-size: 40px;
+    font-family: "Share Tech Mono", monospace;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    background-color:rgb(232, 55, 238);
+}
+
+.form{
+    background-color: rgb(65, 19, 108);
+    display: inline-block;
+    height: 300px;
+    width: 506px;
+    position: absolute;
+    top: 530px;
+    left: 500px;
+}
+
+.i1, .i2, .i3{
+    display: inline-block;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+}
+
+.i1{
+    top: 30px;
+    left: 50px;
+}
+
+.i2{
+    top: 80px;
+    left: 50px;
+}
+
+.i3{
+    top: 130px;
+    left: 50px;
+}
+
+.i4{
+    top: 180px;
+    left: 50px;
+}
+
+.cont{
+    display: inline-block;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.pg3text{
+    font-family: "Share Tech Mono", monospace;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    top:0;
+    left: 250px;
+    color: white;
+}
+
+.pg3subtext{
+    font-family: "Poppins", monospace;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    top:70px;
+    left: 150px;
+    width: 900px;
+    color: white;
+    font-weight: 100;
+}
+
+.m3{
+    font-family: "Poppins", monospace;
+    font-weight: 100;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    top:200px;
+    left: 10px;
+    width: 800px;
+    color: white;
+
+}
+
+.footer{
+    position:absolute;
+    top:900px;
+    width: 1430px;
+    background-color: rgb(255, 255, 255);
+}
+</style>
+<title>The future is here</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body bgcolor="black">
+        <header>
+            <button type="menu" id="dash" class="ham" onclick="toggledash()"><img src="C:\Users\Amit\Downloads\ham.jpg" height="70px"></button>
+            <button type="button" id="prof_man" class="prof_man" align="right" onclick="manprof_red()"><img src="C:\Users\Amit\Downloads\prof.jpg" height="80px" width="80px"></button>    
+        </header color="black">
+        <hr color="white">
+        <div class="dashboard" id="dashb">dashtest
+            <button onclick="pro_red()" class="prosub" id="pro"><img src="C:\Users\Amit\Downloads\pro.jpeg" height="40px" width="40px"></button>
+            <button onclick="manprof_red()" class="manprof" id="man"><img src="C:\Users\Amit\Downloads\prof.jpg" height="40px" width="40px"></button>
+        </div> 
+      <p class="tc">THE FUTURE IS HERE.</p>
+    
+        <div class="a1" >
+            <div class="a1-text">
+                <li>Manage logs</li>
+                <li>Serve the society</li>
+                <li>Make accurate predictions</li>
+            </div>
+            <div class="a2">
+                <a class="a2-text" href="regform.html">GET STARTED &#62;</a>
+            </div>
+        </div>
+        <div>
+            <p class="p1">more power.</p>
+            <p class="p2">less cost.</p>
+        </div>
+    <div >
+        <p class="why"><b>Why us?</b></p>
+        <p class="because">Through our app we aim to provide seamless distribution of electricity through AI powered graphs and automatic maintenance reminders.</p>
+    </div>
+    
+    </body>
+    <footer class="footer">
+        <div>
+        <a href="task.html"><img src="C:\Users\Amit\Downloads\list.jpg" height="100px"></a>
+        <a class="home" href="home2.html"><img src="C:\Users\Amit\Downloads\home.jpg" height="100px"></a>
+        <a href="settings.html"><img src="C:\Users\Amit\Downloads\set.jpg" height="100px" align="right"></a>
+        </div>   
+    </footer>
+</html>

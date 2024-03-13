@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Demand Prediction</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <h1>Energy Demand Prediction</h1>
+    <form action="/predict" method="post" onsubmit="convertInputs()">
+        <label for="house_number">House Number:</label>
+        <input type="text" id="house_number" name="house_number" required><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <script>
+        function convertInputs() {
+            convertHouseNumber(); // Convert house number input
+            convertDate(); // Convert date input
+        }
+
+        function convertHouseNumber() {
+            var inputElement = document.getElementById('house_number');
+            var inputValue = inputElement.value.trim();
+
+            // Define mapping of string values to corresponding integer values
+            var stringToIntegerMap = {
+                'string1': 1,
+                'string2': 2,
+                'string3': 3,
+                // Add more mappings as needed
+            };
+
+            // Check if the input value matches any string key in the mapping
+            if (inputValue in stringToIntegerMap) {
+                // Update input value with the corresponding integer value
+                inputElement.value = stringToIntegerMap[inputValue];
+            } else {
+                // Attempt to convert input value to a number
+                var numericValue = parseInt(inputValue);
+
+                // Check if conversion was successful
+                if (!isNaN(numericValue)) {
+                    // Update input value with the converted number
+                    inputElement.value = numericValue;
+                } else {
+                    // If conversion failed and input value does not match any string key, prevent form submission
+                    alert('Please enter a valid house number.');
+                    event.preventDefault(); // Prevent form submission
+                }
+            }
+        }
+
+        function convertDate() {
+            // Convert date input to YYYY-MM-DD format expected by Flask
+            var dateElement = document.getElementById('date');
+            dateElement.value = new Date(dateElement.value).toISOString().split('T')[0];
+        }
+    </script>
+</body>
+</html>

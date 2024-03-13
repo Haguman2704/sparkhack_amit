@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head><title>The future is here</title>
+        <link rel="stylesheet" href="mystyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body bgcolor="black">
+        <header>
+            <a href="n1.html">
+                <img src="C:\Users\Amit\Downloads\m1.jpeg" height="70px"></a>
+                <a href="n2.html"><img src="C:\Users\Amit\Downloads\prof2.jpeg" height="70px" align="right"></a>
+        </header color="black">
+        <hr color="white"> 
+    
+        <div class="a1">
+            <div>
+                <p class="pg3text">YOU HAVE REGISTERED SUCCESSFULLY!</p>
+                <p class="pg3subtext">Help yourself to our features by clicking on the icons below. It's your turn to change the world.</p>
+            </div>
+            <div class="a2">
+                <form class="pro" id="paymentForm" action="payment.php" method="POST">
+                    <label for="premiumCheckbox">
+                        <input  type="checkbox" id="premiumCheckbox" name="premiumCheckbox">
+                        Upgrade to pro for greater features!
+                    </label>
+                    <br>
+                    <button class="pay" type="submit" id="paymentButton" disabled>Proceed to Payment</button>
+                </form>
+            
+               
+            </div>
+        </div>
+        <div>
+            <p class="p1">more power.</p>
+            <p class="p2">less cost.</p>
+        </div>
+    <div >
+        <p class="why"><b>Why us?</b></p>
+        <p class="because">Through our app we aim to provide seamless distribution of electricity through AI powered graphs and automatic maintenance reminders.</p>
+    </div>
+    
+    </body>
+    <footer class="footer">
+        <div>
+        <a><img src="C:\Users\Amit\Downloads\list.jpg" height="90px" id="taskbar"></a>
+        <a class="home" href="userprofile.html"><img src="C:\Users\Amit\Downloads\home.jpg" height="100px"></a>
+        <a href="page 6.html"><img src="C:\Users\Amit\Downloads\set.jpg" height="100px" align="right"></a>
+        </div>  
+    </footer>
+    <script>
+        document.getElementById("premiumCheckbox").addEventListener("change", function() {
+            var paymentButton = document.getElementById("paymentButton");
+            paymentButton.disabled = !this.checked;
+            var activateButton = document.getElementById("taskbar");
+            activateButton.disabled = !this.checked;
+            if (!activateButton.disabled){
+                document.getElementById("taskbar").addEventListener("change", function() {
+                    window.location.href="pay_gate.html";
+                }
+                )
+            }
+        });
+    </script>
+</html>
